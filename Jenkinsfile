@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('git clone'){
             steps {
-                git branch: 'ounimohamed-5SAE6-G4', changelog: false, poll: false, url: 'https://github.com/waeltb/5SAE6-G4-Kaddem.git'
+                git changelog: false, poll: false, url: 'https://github.com/MohamedOuni/KaddemBackend_Devops.git'
                 sh 'mvn clean'
                 sh 'mvn install'
 
